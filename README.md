@@ -100,8 +100,6 @@ Respostas:
 }
 ```
 
-2. Configurações e Middlewares
-
 ### CORS Configuration
 
 A configuração de CORS permite que requisições de origens específicas possam acessar os recursos da API.
@@ -114,7 +112,8 @@ A configuração de CORS permite que requisições de origens específicas possa
 ### Swagger OpenAPI
 A documentação da API é gerada automaticamente através do Swagger (OpenAPI). Isso permite uma visualização e interação fácil com os endpoints, conforme definido no arquivo SwaggerConfig.
 
-3. Tratamento de Exceções
+**3. Tratamento de Exceções**
+
 A API usa uma classe de exceções personalizada para tratar erros que ocorrem durante a validação da senha. Se um erro ocorrer, ele é tratado com a resposta adequada.
 
 ### Exceções Possíveis:
@@ -133,13 +132,14 @@ A API usa uma classe de exceções personalizada para tratar erros que ocorrem d
 }
 ```
 
-4. Dependências
+**4. Dependências**
+
 - Spring Boot: Framework utilizado para criar a API.
 - Swagger (OpenAPI): Usado para gerar e documentar os endpoints da API.
 - Spring Web: Para gerenciar as requisições HTTP.
 - Spring Context: Para injeção de dependências e configuração.
 
-5. Como Rodar o Projeto
+**5. Como Rodar o Projeto**
 
 a) Clone o repositório do projeto.
 b) Abra o projeto em sua IDE preferida (ex: IntelliJ, Eclipse).
