@@ -2,11 +2,13 @@ package com.teste_tecnico.api_senha.service;
 
 import com.teste_tecnico.api_senha.domain.Password;
 import com.teste_tecnico.api_senha.exceptions.*;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.function.Function;
 
 @Service
 public class PasswordService {
@@ -40,5 +42,10 @@ public class PasswordService {
             }
         }
         return false;
+    }
+
+    @Bean
+    public Function<Password, String> passwordChecker() {
+        return password -> checkPassword(password.getPassword());
     }
 }
